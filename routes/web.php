@@ -12,5 +12,5 @@ use App\Http\Controllers\PostController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', [postController::class, 'index']);
+Route::get('/',[postController::class, 'index']);
+Route::get('/posts/{post}', [postController::class, 'show']);
